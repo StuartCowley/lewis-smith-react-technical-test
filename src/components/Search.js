@@ -4,14 +4,13 @@ import "../styles/search.css";
 import "../requests/getImages";
 import getImages from "../requests/getImages";
 
-const Search = () => {
+const Search = ({ setSearchResults }) => {
 
     const [ value, setValue ] = useState();
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(event);
-        getImages(value);
+        setSearchResults(getImages(value));
     }
 
   return (
