@@ -49,11 +49,11 @@ npm install
 
 ### Desktop
 
-`![Desktop Screenshot](./public/desktop-screenshot.png)`
+![Desktop Screenshot](./public/desktop-screenshot.png)
 
 ### Phone
 
-`![Phone Screenshot](./public/phone-screenshot.png)`
+![Phone Screenshot](./public/phone-screenshot.png)
 
 
 ### If I had more time
