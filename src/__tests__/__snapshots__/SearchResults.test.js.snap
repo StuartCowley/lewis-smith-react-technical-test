@@ -2,7 +2,10 @@
 
 exports[`SearchResults renders correctly 1`] = `
 <DocumentFragment>
-  <p>
+  <p
+    class="card-no-result"
+    style="text-align: center; font-weight: bold; font-size: 20px;"
+  >
     No results
   </p>
 </DocumentFragment>
@@ -10,20 +13,24 @@ exports[`SearchResults renders correctly 1`] = `
 
 exports[`SearchResults renders correctly with results 1`] = `
 <DocumentFragment>
-  <img
-    alt="space"
-    class="card-image"
-    src="https:/example.com/image1.jpg"
-  />
-  <img
-    alt="space"
-    class="card-image"
-    src="https:/example.com/image2.jpg"
-  />
-  <img
-    alt="space"
-    class="card-image"
-    src="https:/example.com/image3.jpg"
-  />
+  <div
+    class="card-image-parent"
+  >
+    <img
+      alt="space"
+      class="card-image"
+      src="https:/example.com/image1.jpg"
+    />
+    <img
+      alt="space"
+      class="card-image"
+      src="https:/example.com/image2.jpg"
+    />
+    <img
+      alt="space"
+      class="card-image"
+      src="https:/example.com/image3.jpg"
+    />
+  </div>
 </DocumentFragment>
 `;

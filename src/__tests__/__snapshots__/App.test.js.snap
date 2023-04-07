@@ -24,7 +24,10 @@ exports[`App renders correctly 1`] = `
         Search
       </button>
     </form>
-    <p>
+    <p
+      class="card-no-result"
+      style="text-align: center; font-weight: bold; font-size: 20px;"
+    >
       No results
     </p>
   </div>
