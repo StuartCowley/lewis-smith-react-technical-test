@@ -1,12 +1,12 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Search from "../components/Search";
 import renderer from "react-test-renderer";
 
 describe("Search", () => {
+  const validProps = {
+    setSearchResult: jest.fn(),
+  };
   it("renders correctly", () => {
-    const validProps = {
-      setSearchResult: jest.fn(),
-    };
     const rendered = renderer.create(
       <Search setSearchResult={validProps.setSearchResult} />
     );
@@ -15,9 +15,6 @@ describe("Search", () => {
   });
 
   it("Renders a single button with correct text", () => {
-    const validProps = {
-      setSearchResult: jest.fn(),
-    };
     render(<Search setSearchResult={validProps.setSearchResult} />);
 
     const button = screen.getAllByRole("button");

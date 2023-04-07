@@ -3,12 +3,27 @@
 exports[`SearchResults renders correctly 1`] = `
 <DocumentFragment>
   <p>
-    SearchResults
+    No results
   </p>
+</DocumentFragment>
+`;
+
+exports[`SearchResults renders correctly with results 1`] = `
+<DocumentFragment>
   <img
     alt="space"
     class="card-image"
-    src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+    src="https:/example.com/image1.jpg"
+  />
+  <img
+    alt="space"
+    class="card-image"
+    src="https:/example.com/image2.jpg"
+  />
+  <img
+    alt="space"
+    class="card-image"
+    src="https:/example.com/image3.jpg"
   />
 </DocumentFragment>
 `;
