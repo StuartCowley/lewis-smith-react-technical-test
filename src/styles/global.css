@@ -1,0 +1,5 @@
+body {
+    background-image: url("../../public/nasa-photo-earth.jpeg");
+    background-size: cover;
+    background-position: center center;;
+}
